@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    style="@style/Widget.MaterialComponents.CardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="10dp"
+    app:cardForegroundColor="@android:color/transparent"
+    android:id="@+id/cv_service">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackBold"
+            android:id="@+id/tv_service_name"
+            android:textSize="20sp"
+            tools:text="Service Name"/>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/tv_service_name"
+            android:background="@color/colorGrey2"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:id="@+id/tv_title_queue_quota"
+            android:layout_below="@id/divider"
+            android:layout_toStartOf="@id/tv_queue_quota"
+            android:textSize="16sp"
+            android:text="Kuota Antrean"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_queue_quota"
+            android:layout_below="@id/divider"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:text="20 Antrean"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:id="@+id/tv_title_interval"
+            android:layout_below="@id/tv_title_queue_quota"
+            android:layout_toStartOf="@id/tv_interval"
+            android:textSize="16sp"
+            android:text="Jarak Antrean"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_interval"
+            android:layout_below="@id/tv_queue_quota"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:text="10 Menit"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:id="@+id/tv_title_max_day"
+            android:layout_below="@id/tv_title_interval"
+            android:layout_toStartOf="@id/tv_max_day"
+            android:textSize="16sp"
+            android:text="Maksimal Pengambilan"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_max_day"
+            android:layout_below="@id/tv_interval"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:text="10 Hari"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

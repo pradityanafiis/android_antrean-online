@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="10dp"
+    app:cardForegroundColor="@android:color/transparent"
+    android:id="@+id/cv_queue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackBold"
+            android:id="@+id/tv_queue_number"
+            android:textSize="20sp"
+            tools:text="Queue Number"/>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/tv_queue_number"
+            android:background="@color/colorGrey2"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackBold"
+            android:id="@+id/tv_merchant_name"
+            android:layout_below="@id/divider"
+            android:textSize="18sp"
+            tools:text="Merchant"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackNormal"
+            android:id="@+id/tv_service_name"
+            android:layout_below="@id/tv_merchant_name"
+            android:textSize="15sp"
+            tools:text="Service"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_service_name"
+            android:textSize="15sp"
+            tools:text="Schedule"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextViewBlackBold"
+            android:id="@+id/tv_queue_status"
+            android:layout_below="@id/tv_schedule"
+            android:textSize="15sp"
+            tools:text="Queue Status"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

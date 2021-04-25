@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.MapsActivity">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cv_map"
+        tools:context=".view.ui.MapsActivity" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextViewBlackNormal"
+                android:id="@+id/tv_merchant_address"
+                android:lines="2"
+                tools:text="@tools:sample/lorem/random"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_choose_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_merchant_address"
+                android:textAllCaps="false"
+                android:text="Pilih Lokasi Ini" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

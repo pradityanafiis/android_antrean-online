@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "414353412771",
+    "firebase_url": "https://antreanonline-9d870.firebaseio.com",
+    "project_id": "antreanonline-9d870",
+    "storage_bucket": "antreanonline-9d870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414353412771:android:005a0cc0017c3299996516",
+        "android_client_info": {
+          "package_name": "com.praditya.antreanonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414353412771-it67vt0ctf2chfqta5sftlcnaacjd7p3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.praditya.antreanonline",
+            "certificate_hash": "66683e78c70214e791cfc323c24dbfae9d251618"
+          }
+        },
+        {
+          "client_id": "414353412771-oa3dfiju02papnr7t9ebonarkg6vnsch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_LDFZIpgrHvi1I78SqFODyvHN88UBtOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414353412771-oa3dfiju02papnr7t9ebonarkg6vnsch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
